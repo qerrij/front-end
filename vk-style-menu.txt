@@ -1,0 +1,18 @@
+nav {
+  margin-top: 10vh;
+  width: 50vw;
+}
+li{
+  padding: 2vh 25vw 2vh 1vw;
+  list-style: none;
+  margin: 1vh;
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li:hover{
+  padding: 2vh 35vh 2vh 1vh;
+  font-family: Arial, Helvetica, sans-serif;
+  border-left: 2px solid blue;
+  color: black;
+  background-color: rgb(205, 205, 223);
+}
