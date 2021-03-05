@@ -1,95 +1,85 @@
 body {
-    height: 100vh;
     margin: 0;
     padding: 0;
 }
-.content {
-    margin: 30px;
-    margin-left: auto;
-    margin-right: auto;
+header {
+    background-color: black;
+    /* width: 100%; */
     display: flex;
-    margin-top: 10vh;
+    justify-content: space-between;
+    align-content: flex-start;
 }
-.folder {
-    background-color: rgb(54, 221, 54);
+.logoImg {
+    float: left;
+    height: 90px;
 }
-.screen1 ol {
-    margin-left: 2vh;
-    padding: 0;
-    font-size: 30px;
-    /* убираем стандартную нумерацию */
-   list-style: none;
-   /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
-   counter-reset: li;
-}
-.screen1 ol li{
-    line-height: 8vh;
+.logo {
+    padding: 20px;
+    width: 40%;
+    color: white;
     
 }
-.screen1 ol li:before{
-    /* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
-   counter-increment: li;
-   /* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
-   content: counters(li, ".") ". ";
+.headerH1, .headerH2{
+    margin: 0;
 }
-.screen{
-    display: inline-block;
-    border: 1px solid black; 
-    width: 24%;
-    outline: none;
-    padding: 15px;
-    width: calc(100% / 3 - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
-    /* height: 75%; */
+header > nav {
+    display: flex;
+    /* align-content: flex-start; */
+
 }
-.screen1 {
-    background-color: rgb(214, 250, 214);
-    display: inline-block;
-    width: 24%;
-    padding: 15px;
-    width: calc(100% / 3 - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 8px;
-}
-.screen2{
-    background-color: pink;
-    display: inline-block;
-    width: 24%;
-    padding: 15px;
-    width: calc(100% / 3 - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.screen3{
-    background-color: orange;
-    display: inline-block;
-    width: 24%;
-    padding: 15px;
-    width: calc(100% / 3 - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.first a{
-    display: block;
+.navA {
+    margin: 15px;
+    display: flex;
+    text-decoration: none;
     color: white;
 }
-.first {
-    margin: 0 auto;
-    /* display: inline-block; */
-    border-radius: 50%;
-    text-align: center;
-    background-color: white;
+header ul {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 13vh;
-    height: 13vh;
-    z-index: 1;
-    position: relative;
-    top: -8vh;
-    background-color: rgb(54, 221, 54);
-
+    margin: 0;
+}
+main{
+    background-image: url(main.jpg);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+.photo1{
+    height: 120px;
+}
+.mainH1{
+    color: white;
+}
+.mainTextBlock{
+    color: white;
+    width: 40%;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.title {
+    margin-left: 3%;
+}
+.text1{
+    font-size: 12px;
+}
+article{
+width: 33%; 
+}
+footer {
+    background-color: black;
+    color: white;
+    /* display: flex; */
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.container a {
+    text-decoration: none;
+    color: white;
+}
+footer p{
+    text-align: center;
 }
